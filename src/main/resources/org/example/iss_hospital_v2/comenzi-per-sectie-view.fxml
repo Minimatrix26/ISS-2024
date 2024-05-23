@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.iss_hospital_v2.ComenziPerSectieController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <children>
+        <Label text="ID Sectie"/>
+        <TextField fx:id="sectieIdField"/>
+        <Button text="Cauta Comenzi" onAction="#handleCautaComenzi"/>
+        <TableView fx:id="tableComenzi">
+            <columns>
+                <TableColumn fx:id="colId" text="ID"/>
+                <TableColumn fx:id="colSectieId" text="ID Sectie"/>
+                <TableColumn fx:id="colMedicamentId" text="ID Medicament"/>
+                <TableColumn fx:id="colCantitate" text="Cantitate"/>
+                <TableColumn fx:id="colOnorata" text="Onorata"/>
+            </columns>
+        </TableView>
+    </children>
+
+</VBox>

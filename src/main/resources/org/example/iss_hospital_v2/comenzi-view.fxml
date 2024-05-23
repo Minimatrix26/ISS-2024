@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.TableColumn?>
+        <?import javafx.scene.control.TableView?>
+        <?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.iss_hospital_v2.ComenziController">
+<children>
+    <TableView fx:id="tableComenzi">
+        <columns>
+            <TableColumn fx:id="colId" text="ID"/>
+            <TableColumn fx:id="colSectieId" text="ID Sectie"/>
+            <TableColumn fx:id="colMedicamentId" text="ID Medicament"/>
+            <TableColumn fx:id="colCantitate" text="Cantitate"/>
+            <TableColumn fx:id="colOnorata" text="Onorata"/>
+        </columns>
+    </TableView>
+    <Button fx:id="btnOnoreaza" text="Onoreaza Comanda" onAction="#handleOnoreaza"/>
+</children>
+</VBox>
